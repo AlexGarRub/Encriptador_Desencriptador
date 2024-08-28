@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorAlura</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;
+    1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo__alura" src="assets/Logoaluralogo.svg" 
+            alt="logo de Alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+
+            <!-- Placeholder desaparece al sobreescribir -->
+            <!-- Textarea es como un input pero en cuadro grande -->
+            <div class="main__izquierda">    
+                <textarea placeholder="Ingrese texto aqui" 
+                class="input__texto" id="ingresarTexto"></textarea>
+                <div class="main__izquierda__inferior">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="circulo con 
+                    signo de exclamacion">
+                    <span class="texto__advertencia">Solo letras minúsculas y sin acentos</span>
+                    <div class="main__izquierda__inferior__botones">
+                        <button id="botonEncriptar" class="btn__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="btn__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="textoDerecha" class="main__derecha">
+                <img id="monito" class="monigote" src="assets/Muñecomunequito.svg" alt="">
+                    <p id="mensajeEncriptado" class="msj__encontrado">Ningun mensaje fue encontrado</p>
+                    <p id="derechaIndicacion" class="main__derecha__indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="btn__copiar btn__escondido">Copiar</button>
+            </div>
+        </div>
+            
+    </main>
+    <script src="encriptador.js"></script>
+    <footer>
+
+    </footer>
+</body>
+</html>
